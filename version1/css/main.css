@@ -1,0 +1,334 @@
+/* Header */
+
+	#header {
+		position: relative;
+		background-image: url("../images/header.png");
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;/*color del teto*/
+		text-align: center;
+		padding: 0em 0 2em 0;
+		cursor: default;
+	}
+
+		#header:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			height: 30%;
+		}
+
+		#header .inner {
+			position: relative;
+			z-index: 1;
+			margin: 20;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		#header header {
+			display: inline-block;
+		}
+
+			
+		#header h1 {
+			color: #fff;
+			font-size: 3em;
+			line-height: 0em;
+		}
+			#header h1 a {
+				color: inherit;
+			}
+
+		#header footer {
+			margin: 1em 0 0 0;
+		}
+
+	body.homepage #header {
+		height: 100vh;
+		min-height: 40em;
+	}
+
+		body.homepage #header h1 { 
+			font-size: 4em;
+		}
+
+	body.homepage.is-loading #header:after {
+		opacity: 1;
+	}
+
+/*header_page*/
+
+#header_page{
+	background-image: url("../images/header.png");
+}
+
+/*barra*/
+#barra{
+	/*background-color: #A0522D;*/
+	/*border-radius: 10px;*/
+	margin: auto;
+	width: 1200px
+}
+
+#logo {
+		margin-left:10px;
+		margin-top: 10px;
+		
+}
+
+#body_home{
+		position:relative;
+		/*background-image: url("../images/header.png");*/
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		/*text-align: center;*/
+		/*padding: 0em 0 2em 0;*/
+		cursor: default;
+}
+
+/*botones*/
+
+.boton{
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 9px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton1{
+	float:right;
+	margin: 60px 30px 10px 10px;
+	
+}
+
+.boton2{
+	background-color: blue;
+	float:right;
+	margin: 60px 30px 10px 10px;
+}
+
+.boton4{
+	background-color:red;
+	float:right;
+	margin: 60px 30px 10px 10px;
+	
+}
+
+.boton5 { /*controles del boton*/
+			
+	background-color: #FF4500;
+}
+.boton6 { /*controles del boton*/
+			
+	background-color: blue;
+}
+
+
+/*pestannas*/
+
+.contenedor{
+	position:relative;
+    /*width: 1080px;
+    margin: auto;*/
+    /*background: #F4A460;*/
+    color: black;
+    padding: 0px 15px 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+    margin-top:10px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#pestanas {
+    float: top;
+    font-size: 2ex;
+    font-weight: bold;
+}
+
+#pestanas ul{
+    margin-left: -40px;    
+}
+
+#pestanas li{
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    margin: 0px 2px -2px -0px;
+    background: darkgrey;/*color de los no seleccionados*/
+    /*border-top-left-radius: 5px;
+    border-top-right-radius: 5px;*/
+    border: 2px solid black;
+    border-bottom: dimgray;
+    padding: 0px 20px 0px 20px;
+}
+
+#pestanas a:link{/*aqui se modifica las letras de las pestañas*/
+    text-decoration: none;
+    color: black;
+}
+
+#contenidopestanas{
+    clear: both;  
+    background: white;
+    padding: 20px 0px 20px 20px;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border: 2px solid black;
+    width: 1190px;
+}
+
+.icono_opcion{
+	width:15px;
+	height:15px;
+}
+
+/*slide*/
+.slide_container{
+	width:1000px;
+	margin:auto;
+	margin-top:10px;
+	padding:10px 0px 50px;
+	border:none;
+	/*background-color: #CD853F;*/
+	/*border-radius: 10px;*/
+}
+
+#slider{
+	position:relative;
+	width: 920px;
+	height: 370px;
+	padding: 10px 10px 0px 10px;
+	background-color:#000;
+	margin: 0 auto;
+}
+
+#slider > div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+/* buscar*/
+
+#buscar > button > img{
+	width:15px;
+	height:15px;
+}
+
+#buscar >button{
+	border-style:none;
+	border-radius:5px;
+	background-color:black;
+	color:white;
+	
+}
+
+#buscar > input{
+	border-style:inset;
+	color: black;
+}
+
+#buscar{
+	border-style:none;
+	border-radius:5px;
+	padding: 7px 7px;
+	background-color: black;
+	/*margin-left:850px;*/
+	margin: 20px 50px 0px 900px;
+	font-weight: bold;
+	
+}
+/*publicar*/
+#publicar > button{
+    border-radius: 100%;
+    position:fixed;
+    bottom: 50px;
+    left: 1260px;
+    cursor:pointer;
+}
+
+#publicar > button >img{
+	border:none;
+	width:40px;
+	height:50px;
+}
+
+
+/*formulario*/
+#registro{
+	padding-right:100px;
+}
+
+/*evento*/
+section.evento {
+  margin: 10px;
+  width: 240px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  
+}
+
+section.titulo {
+  padding: 10px 10px; 
+}
+
+.flip{
+	width: 240px;
+	height: 200px;
+	margin:auto;
+	float:left;
+}
+
+.flip > .front{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY(0deg);	/*para que funcione en chrome*/
+    transform: perspective( 600px ) rotateY(0deg);/*para que funcione en internet explorer y mozilla*/
+    background: #fc0; width:240px; height:200px;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    transition: webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+
+.flip > .back{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY(180deg);	/*para que funcione en chrome*/
+    transform: perspective( 600px ) rotateY(180deg);/*para que funcione en internet explorer y mozilla*/
+    background: black; width:240px; height:200px;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    transition: webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+    color:white;
+    padding:15px;
+    text-align: justify;
+}
+
+.boton3{
+	float: bottom right;
+	color:black;
+	
+}
+.flip:hover > .front{
+	-webkit-transform: perspective(600px) rotateY(-180deg);
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip:hover > .back{
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+}
+/*data font*/
+.data_descript{
+	font-weight: bold;
+	font-size: 20px;
+}
