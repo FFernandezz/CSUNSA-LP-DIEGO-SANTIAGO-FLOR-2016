@@ -228,3 +228,65 @@
  	height: 400px;
  	background-color: white;
  }
+
+
+ /*evento*/
+section.evento {
+  margin: 10px;
+  width: 240px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  
+}
+
+section.titulo {
+  padding: 10px 10px; 
+}
+
+.flip{
+	width: 240px;
+	height: 200px;
+	margin:auto;
+	float:left;
+}
+
+.flip > .front{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY(0deg);	/*para que funcione en chrome*/
+    transform: perspective( 600px ) rotateY(0deg);/*para que funcione en internet explorer y mozilla*/
+    background: #fc0; width:240px; height:200px;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    transition: webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+
+.flip > .back{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY(180deg);	/*para que funcione en chrome*/
+    transform: perspective( 600px ) rotateY(180deg);/*para que funcione en internet explorer y mozilla*/
+    background: black; width:240px; height:200px;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    transition: webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+    color:white;
+    padding:15px;
+    text-align: justify;
+}
+
+.boton3{
+	float: bottom right;
+	color:black;
+	
+}
+.flip:hover > .front{
+	-webkit-transform: perspective(600px) rotateY(-180deg);
+	transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip:hover > .back{
+	-webkit-transform: perspective(600px) rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
+}
