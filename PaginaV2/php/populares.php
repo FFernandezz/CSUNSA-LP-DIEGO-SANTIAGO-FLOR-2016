@@ -2,7 +2,7 @@
 	require 'conection.php';
 	require 'funciones.php';
 
-	define("limiteLikes", 24);
+	define("limite", 24);
 
 	$fechalimite  = date('Y-m-d');
 	$nuevafecha = strtotime ( '+1 day +5 hours' , strtotime ( $fechalimite ) ) ;
@@ -13,7 +13,7 @@
 	$fechaLimite = new MongoDate(strtotime($nuevafecha));
 
 	$collection = $database->tb_eventoDetalle;
-	$documento = $collection->find(array("NumLikes" =>array('$gt'=>limiteLikes),"Fecha"=> array('$gt' => $fechaLimite))); 
+	$documento = $collection->find(array("NumLikes" =>array('$gt'=>limite),"Fecha"=> array('$gt' => $fechaLimite))); 
 	$data = array();
 		
 	foreach ($documento as $doc) {

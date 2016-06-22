@@ -2,6 +2,8 @@
 	require 'conection.php';
 	require 'funciones.php';
 
+	define("limite", 24);
+
 	$fecha = date('Y-m-d h:i:s');
 	$fechaLimiteInferior = strtotime('+5 hours +1 hours',strtotime($fecha));
 	$fechaLimiteInferior = date('Y-m-d h:i:s',$fechaLimiteInferior);
