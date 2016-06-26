@@ -261,28 +261,29 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-sm-2" for="pwd">Dirección:</label>
+            <label class="control-label col-sm-2" for="direccion">Dirección:</label>
             <div class="col-sm-5">
               <input type="text" class="form-control" id="direccion" placeholder="Ingrese dirección">
             </div>
         </div>
 
-        
+         <div class="form-group">
+            <label class="control-label col-sm-2" for="ciudad">Ciudad:</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" id="ciudad" placeholder="Ingrese ciudad">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pais"> Pais:</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" id="pais" placeholder="Ingrese pais">
+            </div>
+        </div>
+
+        <input type="hidden" name="latitud" value="-16.433575">
+        <input type="hidden" name="longitud" value="-71.522274">
     </form>
-
-
-
-• Descripcion
-• Fecha
-• Hora
-• Direccion
-• Ciudad
-• Pais
-• NumLikes
-• Latitud
-• Longitud
-• Imagen
-
         
     <!-- Main content aqui escribir lo de los eventos principal-->
       

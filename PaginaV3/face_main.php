@@ -8,7 +8,7 @@ $fb = new Facebook\Facebook([
   ]);
 $helper = $fb->getRedirectLoginHelper();
 $permissions = ['email']; // optional
-$location ="http://localhost:8083/face/PaginaV3/home.php";
+$location ="http://localhost:8083/trabajoLP/CSUNSA-LP-DIEGO-SANTIAGO-FLOR-2016/PaginaV3/home.php";
 
 	
 try {
